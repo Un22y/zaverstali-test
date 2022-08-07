@@ -1,0 +1,142 @@
+/*Main style*/
+
+* {
+    font-family: 'Montserrat';
+    scroll-behavior: smooth; 
+}
+
+
+body {
+    max-width: 1578px;
+    color: #533738;
+    background-color: #F6EDE9;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-weight: 50;
+}
+
+
+/*head*/
+.logo{
+    flex-grow: 1;  
+    display: flex;
+    flex-direction: row;
+    line-height: 20px;
+}
+
+.header {
+    max-width: 85%;
+    position: absolute;
+    display: flex;
+    border: 1px solid red;
+    margin-top: 5vh;
+    margin-left: 10%;
+    width: 100%;
+    z-index: 1;
+}
+
+/*nav*/
+.nav {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    
+}
+
+.nav_link {
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 20px;
+    position: relative;
+    color: #533738;
+    text-decoration: none;
+    transition: color .3s linear;
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #CC8B86;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left:0;
+    z-index: 1;
+    transition: .3s;
+}
+
+.nav_link:hover {
+    color: #CC8B86;
+
+}
+
+.nav_link:hover:after {
+    opacity: 1;
+}
+
+
+
+
+
+
+/* Intro */
+
+
+
+.intro {
+    max-width: 100%;
+    height: 100vh;
+    background-image: url("content/Mask_Group_main.png");
+    background-size: cover;
+}
+
+.intro-container {
+    border: 1px solid green;
+    margin-left: 15%;
+    display: flex;
+    flex: 0 1 33%;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 33%;
+    height: 100vh;
+}
+
+
+.intro__title {
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 25px;
+}
+
+.intro__subtitle {
+    font-size: 18px;
+    max-width: 80%;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.intro_button {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #CC8B86;
+    background-color: #CC8B86;
+    padding: 25px 50px;
+    text-align: center;
+    color: #533738;
+    max-width: 33%;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: .3s;
+}
+
+.intro_button:hover {
+    border-color: #533738;
+}
+

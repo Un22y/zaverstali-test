@@ -1,0 +1,459 @@
+/*Main style*/
+
+* {
+    font-family: 'Montserrat';
+    scroll-behavior: smooth; 
+}
+
+
+body {
+    max-width: 1578px;
+    color: #533738;
+    background-color: #F6EDE9;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+    font-weight: 50;
+}
+
+
+/*head*/
+.logo{
+    display: flex;
+    flex-direction: row;
+    line-height: 20px;
+}
+
+.header {
+    position:absolute;
+    display: flex;
+    padding-top: 40px;
+    width: 100%;
+    z-index: 1;
+}
+
+/*nav*/
+.nav {
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: row;
+    justify-content: space-between;
+    font-size: 16px;
+    
+}
+
+.nav_link {
+    
+    vertical-align: top;
+    margin: 0 20px;
+    position: relative;
+    color: #533738;
+    text-decoration: none;
+    transition: color .3s linear;
+}
+
+.nav_link:after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 3px;
+    background-color: #CC8B86;
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left:0;
+    z-index: 1;
+    transition: .3s;
+}
+
+.nav_link:hover {
+    color: #CC8B86;
+
+}
+
+.nav_link:hover:after {
+    opacity: 1;
+}
+
+
+
+
+
+
+/* Intro */
+
+
+
+.intro {
+    max-width: 100%;
+    height: 100vh;
+    background-image: url("content/Mask_Group_main.png");
+    background-size: cover;
+}
+
+.intro-container {
+    padding-left: 15%;
+    display: flex;
+    flex: 0 1 33%;
+    flex-direction: column;
+    justify-content: center;
+    max-width: 35%;
+    height: 100vh;
+}
+
+
+.intro__title {
+    font-size: 50px;
+    line-height: 62px;
+    margin-bottom: 25px;
+}
+
+.intro__subtitle {
+    font-size: 18px;
+    max-width: 80%;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+
+.intro_button {
+    display: inline-block;
+    vertical-align: top;
+    border: 2px solid #CC8B86;
+    background-color: #CC8B86;
+    padding: 25px 50px;
+    text-align: center;
+    color: #533738;
+    max-width: 200px;
+    text-decoration: none;
+    -webkit-transition: 0.3s;
+    transition: .3s;
+}
+
+.intro_button:hover {
+    border-color: #533738;
+}
+
+/*about*/
+
+.about-head {
+    position: relative;
+    padding-top: 65px;
+    width: 100%;
+    text-align: center;
+    font-size: 40px;
+    text-transform: uppercase; 
+}
+
+.about-container {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.about-page {
+    font-size: 18px;
+    margin-left: 64px;
+    line-height: 30px;
+    max-width: 530px;
+}
+
+.about-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    height: 15em;
+    background-color: #533738;
+    color:#F6EDE9;
+}
+
+.about-achievements {
+    text-align: center;
+}
+
+.about-achievements h1 {
+    line-height: 62px;
+}
+
+.about-achievements h2 {
+    text-transform:uppercase ;
+}
+
+/*Portfolio*/
+
+
+.portfolio-head {
+    padding-left: 130px;
+    padding-top: 65px;
+    width: 100%;
+    max-width: max-content;
+    line-height: 50px;
+    font-size: 40px;
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+.portfolio-container {
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 40px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    row-gap: 5vh;
+}
+
+
+
+
+.link-portfolio {
+    padding-top: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.block1, .block2, .block3, .block4 {
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: center;
+}
+
+
+.block1 {
+    position: relative;
+    background-image: url('content/des-1.png');
+    background-size: cover;
+    width: 488px;
+    height: 451px;    
+ }
+ 
+.block2 {
+    position: relative;
+    background-image: url('content/des-2.png');
+    background-size: cover;
+    width: 692px;
+    height: 451px;    
+}
+
+.block3 {
+    position: relative;
+    background-image: url('content/des-3.png');
+    background-size: cover;
+    width: 692px;
+    height: 451px;    
+}
+
+.block4 {
+    position: relative;
+    background-image: url('content/des-4.png');
+    background-size: cover;
+    width: 488px;
+    height: 451px;    
+}
+
+.block1:before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#533738;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+ 
+
+
+.block2:before,
+.block3:before, .block4:before {
+    content: '';
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background:#533738;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+
+.text {
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-self: center;
+    color:#F6EDE9 ;
+    text-align: left;
+    font-size: 18px;
+    position: relative;
+    max-width: 65%;
+    opacity: 0;
+    
+    
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+}
+
+.text > h2 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+
+.block1:hover:before, .block1:hover .text {
+    opacity: 0.8;
+}
+
+.block2:hover:before, .block2:hover .text {
+    opacity: 0.8;
+}
+
+.block3:hover:before, .block3:hover .text {
+    opacity: 0.8;
+}
+
+.block4:hover:before, .block4:hover .text {
+    opacity: 0.8;
+}
+
+.see-more-button a {
+    display: inline-block;
+    vertical-align: center;
+    border: 2px solid #F6EDE9;
+    margin-left: 50px;
+    margin-bottom: 65px;
+    padding: 25px 50px 25px 50px;
+    text-align: center;
+    color: #533738;
+    max-width: 200px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.see-more-button:hover {
+    border-color: #533738;
+}
+
+/* Team */
+
+.team-container {
+    max-width: 1400;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 130vh;
+    background-color: #E2C4BA;
+    background-size: cover;   
+}
+
+.team-head {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.team-head2 {
+    padding-top: 35px;
+    padding-bottom: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+}
+
+.teammates {
+    display: flex;
+    flex: 0 1 33%;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items:baseline;
+
+}
+
+.worker {
+    margin-left: 38px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.worker p {
+    max-width: 320px;
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.worker span {
+    padding-top: 20px;
+    text-align: center;
+    max-width: 285px;
+    line-height: 30px;
+    font-size: 18px;
+    
+}
+
+.worklist {
+    color: #FFFFFF;
+    padding: 20px 29px 20px 29px;
+    line-height: 30px;
+    background-color: #8D7370;
+    border-radius: 35px;
+}
+
+/* Reviews */
+.review-main {
+    position: relative;
+    max-width: 1400px;
+}
+
+.review-head {
+    position: absolute;
+    padding-top: 65px;
+    padding-bottom: 40px;
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+    text-transform: uppercase;
+}
+
+.review-container {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
+
+.review-content {
+
+    display:flex;
+    flex-direction: row;
+    justify-content: space;
+    align-items: center;
+}
+
+.review-content p {
+    max-width: 407px;
+    font-size: 18px;
+    line-height: 30px;
+}
+
+.review-img {
+    height: 568px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.prev-button {
+    
+}

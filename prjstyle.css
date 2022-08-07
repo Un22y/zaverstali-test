@@ -1,0 +1,93 @@
+
+body {
+    font-family: 'Montserrat';
+    src: local('Montserrat Regular'), local('Montserrat-Regular'), url('http://hb.bizmrg.com/fonts/montserrat/400.woff2') format('woff2'), url('http://hb.bizmrg.com/fonts/montserrat/400.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    background-color: #E5E5E5;
+}
+
+.headerbg {
+    background-image: url(content/Mask_Group_main.png);
+    padding: 0;
+}
+
+
+.our-works-head {
+    margin-left: 100px;
+    font-family: Montserrat;
+    color: #533738;
+    font-size: 40px;
+}
+
+.our-works {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 100px;
+    margin-right: 100px;
+    column-gap: 1em;
+    row-gap: 1em;
+}
+
+
+.content-text {
+    display:flex;
+    flex-direction: column;
+    width: 488px;
+    height: 451px;
+    background-image: url(content/des-1-backgr.png);
+    opacity: 0.5;
+}
+
+.text-head{
+    padding: 109px;
+    padding-top: 86px;
+    padding-bottom: 254px;
+    text-align: center;
+    color:white;
+}
+
+.text-des {
+    padding: 35px;   
+    padding-top: 179px;
+    padding-bottom: 122px;
+    font-size: 18px;
+    text-align: left;
+    color:white;
+}
+
+.headmenu {
+    display:flex;
+    justify-content:space-around;
+}
+
+
+.about {
+    padding-left: 182px;
+    padding-right: 182px;
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+}
+
+.about-content {
+    padding: 50px;
+    padding-top: 0;
+    font-size: 18px;
+    line-height: 30px;
+}
+.darkfone {
+    margin-top: 10px;
+    padding-bottom: 50px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    text-align: center;
+    background-color: #8D7370;
+    color: #FFFFFF;
+}
+
+.headline {
+    text-align: center;
+    font-size: 40px;
+    color: #533738;
+}
